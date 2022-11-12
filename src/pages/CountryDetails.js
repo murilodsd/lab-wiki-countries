@@ -12,9 +12,10 @@ function CountryDetails({ allCountries }) {
       return country.alpha3Code == border;
     });
   });
-  console.log(borderCountries);
+
   return (
-    <div>
+    <div className="d-flex flex-column justify-content-center align-items-center">
+    <img src={`https://flagpedia.net/data/flags/icon/256x192/${countrySelected.alpha2Code.toLowerCase()}.png`} alt ="" />
       <h1>{countrySelected.name.official}</h1>
       <table className="table">
         <thead></thead>
